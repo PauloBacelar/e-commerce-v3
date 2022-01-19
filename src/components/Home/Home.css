@@ -1,0 +1,62 @@
+.home {
+  height: calc(100vh - 75px);
+  position: absolute;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.home__content {
+  height: 100%;
+  margin: 0 24px;
+  padding: 0.5em calc((100vw - 1200px) / 2);
+}
+
+.home__shoe {
+  height: 50%;
+  max-height: 300px;
+  position: relative;
+}
+
+.home__shoe-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.home__shoe-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 230px;
+  margin-top: 10px;
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.home__text {
+  margin-top: 32px;
+}
+
+.home__title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.home__description {
+  margin-bottom: 18px;
+}
+
+.home__btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 7.5px;
+}
