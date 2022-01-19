@@ -60,3 +60,41 @@
   background-color: #000;
   border-radius: 7.5px;
 }
+
+@media only screen and (min-width: 768px) {
+  .home__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home__shoe {
+    width: 50%;
+  }
+
+  .home__text {
+    width: 50%;
+  }
+
+  .home__title {
+    font-size: 48px;
+  }
+
+  .home__description {
+    font-size: 18px;
+  }
+
+  .home__btn {
+    font-size: 16px;
+  }
+
+  .home__shoe-img {
+    width: auto;
+  }
+
+  .home__shoe-bg {
+    width: 300px;
+    height: 300px;
+  }
+}
