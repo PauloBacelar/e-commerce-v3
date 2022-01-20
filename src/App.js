@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Home } from "./components";
+import { Navbar, Home, ShopPage } from "./components";
 
 const App = () => {
   return (
@@ -8,6 +8,8 @@ const App = () => {
 
       <main>
         <Home />
+
+        <ShopPage />
       </main>
     </>
   );

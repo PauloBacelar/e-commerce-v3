@@ -1,7 +1,7 @@
 .home {
   height: calc(100vh - 75px);
   max-height: 700px;
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: #f6f6f6;
 }
