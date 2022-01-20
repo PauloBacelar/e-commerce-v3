@@ -14,3 +14,15 @@
   column-gap: 40px;
   margin-top: 20px;
 }
+
+@media only screen and (min-width: 550px) {
+  .shop__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .shop__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

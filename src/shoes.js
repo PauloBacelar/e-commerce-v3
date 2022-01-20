@@ -63,7 +63,7 @@ const shoes = [
     id: 11,
     name: "Nike Flamingo Dark Red",
     price: 129.99,
-    image: "]https://i.postimg.cc/hfQWnG78/shoe-11.png",
+    image: "https://i.postimg.cc/hfQWnG78/shoe-11.png",
   },
   {
     id: 12,
