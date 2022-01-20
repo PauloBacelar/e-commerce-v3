@@ -12,9 +12,11 @@ const Home = () => {
         </div>
 
         <div className="home__text">
-          <h2 className="home__title">Check out our shoes</h2>
+          <h2 className="home__title">Adidas SPLY-350</h2>
           <p className="home__description">
-            Add your favorite shoes to the cart and make a checkout
+            Adidas' SPLY-350 is a lightweight, breathable, comfortable shoe. Go
+            shop and see more shoes like this. Add them to the cart and
+            checkout.
           </p>
 
           <a href="#" className="home__btn">
