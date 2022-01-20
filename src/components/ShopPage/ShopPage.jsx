@@ -1,6 +1,7 @@
 import "./ShopPage.css";
 import shoes from "../../shoes.js";
 import React from "react";
+import Shoe from "./Shoe/Shoe";
 
 const ShopPage = () => {
   return (
@@ -8,7 +9,18 @@ const ShopPage = () => {
       <div className="shop__content">
         <h2>Our offers</h2>
 
-        <img src={shoes[0].image} alt="QWIUEYPQWIUEYIU" />
+        <div className="shop__grid">
+          {shoes.map((shoe) => {
+            return (
+              <Shoe
+                key={shoe.id}
+                image={shoe.image}
+                name={shoe.name}
+                price={shoe.price}
+              />
+            );
+          })}
+        </div>
       </div>
     </section>
   );
