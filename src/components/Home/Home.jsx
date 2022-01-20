@@ -19,7 +19,7 @@ const Home = () => {
             checkout.
           </p>
 
-          <a href="#shop" className="home__btn">
+          <a href="#shop" className="btn">
             Go shop
           </a>
         </div>

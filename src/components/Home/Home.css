@@ -53,16 +53,6 @@
   margin-bottom: 36px;
 }
 
-.home__btn {
-  font-size: 12px;
-  font-weight: 600;
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-  background-color: #000;
-  border-radius: 7.5px;
-}
-
 .home__btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
   transition: all ease 0.3s;
@@ -106,8 +96,8 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 600px) {
   .home {
-    height: 100vh;
+    height: calc(110vh + 60px);
   }
 }

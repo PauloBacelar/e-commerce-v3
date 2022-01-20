@@ -5,7 +5,7 @@
 .shop__content {
   height: 100%;
   margin: 0 24px;
-  padding: 0.5em calc((100vw - 1200px) / 2);
+  padding: 2em calc((100vw - 1200px) / 2);
 }
 
 .shop__grid {

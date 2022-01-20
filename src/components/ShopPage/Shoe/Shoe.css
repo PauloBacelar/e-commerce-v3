@@ -1,5 +1,33 @@
 .shoe {
   background-color: #f6f6f6;
   margin-bottom: 40px;
-  padding: 10px 20px;
+  padding: 40px 20px;
+}
+
+.shoe__image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.shoe__image {
+  transform: rotate(-35deg);
+}
+
+.shoe__info {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.shoe__name {
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.shoe__btn-container {
+  width: 100%;
+}
+
+.shoe__btn {
+  text-align: center;
+  width: 100%;
 }

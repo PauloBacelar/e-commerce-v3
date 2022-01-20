@@ -10,4 +10,15 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  min-width: 280px;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 7.5px;
 }
