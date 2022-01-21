@@ -9,9 +9,18 @@ html {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   min-width: 280px;
+}
+
+*::selection {
+  background-color: #242424;
+  color: #fff;
 }
 
 *::-webkit-scrollbar {

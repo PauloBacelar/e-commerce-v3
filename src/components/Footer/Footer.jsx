@@ -16,17 +16,31 @@ const Footer = () => {
         </div>
 
         <div className="footer__icons">
-          <AiFillInstagram className="footer__icon" />
-          <AiOutlineTwitter className="footer__icon" />
-          <AiFillFacebook className="footer__icon" />
-          <AiFillYoutube className="footer__icon" />
+          <a href="#">
+            <AiFillInstagram className="footer__icon" />
+          </a>
+          <a href="#">
+            <AiOutlineTwitter className="footer__icon" />
+          </a>
+          <a href="#">
+            <AiFillFacebook className="footer__icon" />
+          </a>
+          <a href="#">
+            <AiFillYoutube className="footer__icon" />
+          </a>
         </div>
 
         <div className="footer__list">
           <ul>
-            <li className="footer__list-item">About</li>
-            <li className="footer__list-item">Contact</li>
-            <li className="footer__list-item">Privacy policy</li>
+            <li className="footer__list-item">
+              <a href="#">About</a>
+            </li>
+            <li className="footer__list-item">
+              <a href="#">Contact</a>
+            </li>
+            <li className="footer__list-item">
+              <a href="#">Privacy policy</a>
+            </li>
           </ul>
         </div>
 

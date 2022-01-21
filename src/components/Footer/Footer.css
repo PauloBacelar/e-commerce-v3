@@ -16,16 +16,16 @@
 }
 
 .footer__icon {
+  color: #fff;
   font-size: 24px;
   transition: all 0.25s ease-in-out;
 }
 
 .footer__icon:hover {
   color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
 }
 
-.footer__icon:not(:first-child) {
+.footer__icons a:not(:first-child) {
   margin-left: 0.5em;
 }
 
@@ -34,12 +34,12 @@
   font-size: 14px;
 }
 
-.footer__list-item {
+.footer__list-item a {
+  color: #fff;
   transition: all ease 0.25s;
-  cursor: pointer;
 }
 
-.footer__list-item:hover {
+.footer__list-item a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 

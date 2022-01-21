@@ -4,6 +4,11 @@
   z-index: 1;
   width: 100%;
   height: 75px;
+  transition: all ease-in-out 0.3s;
+}
+
+.header__shadow {
+  box-shadow: 0 5px 10px rgba(57, 63, 72, 0.3);
 }
 
 .header__content {
@@ -25,4 +30,12 @@
   height: 10px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.header__icon {
+  transition: all ease-in-out 0.3s;
+}
+
+.header__icon:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
 }

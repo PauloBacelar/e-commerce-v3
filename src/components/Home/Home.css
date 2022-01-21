@@ -66,7 +66,7 @@
   }
 
   .home__shoe {
-    width: 50%;
+    width: 35%;
   }
 
   .home__text {
@@ -97,6 +97,6 @@
 
 @media only screen and (max-width: 600px) {
   .home {
-    height: calc(110vh + 60px);
+    height: 100vh;
   }
 }
