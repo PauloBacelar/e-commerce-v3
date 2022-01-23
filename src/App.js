@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Home, ShopPage, Footer } from "./components";
+import { CartContext } from "./context/Context";
 
 const App = () => {
   const [headerShadow, setHeaderShadow] = useState(false);
+  const [cart, setCart] = useState({
+    products: [],
+    totalPrice: 0,
+    quantity: 0,
+  });
 
   useEffect(() => {
     const scrollListener = () => {
@@ -21,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <CartContext.Provider value={{ cart, setCart }}>
       <Navbar shadow={headerShadow} />
 
       <main>
@@ -30,7 +36,7 @@ const App = () => {
       </main>
 
       <Footer />
-    </>
+    </CartContext.Provider>
   );
 };
 
