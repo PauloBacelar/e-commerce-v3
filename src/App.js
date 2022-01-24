@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Home, ShopPage, Footer } from "./components";
+import { Navbar, Footer, ProductsPage, CartPage } from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CartProvider from "./context/CartProvider";
 
 const App = () => {
@@ -30,12 +31,16 @@ const App = () => {
 
   return (
     <CartProvider>
-      <Navbar shadow={headerShadow} />
+      <BrowserRouter>
+        <Navbar shadow={headerShadow} />
 
-      <main>
-        <Home />
-        <ShopPage />
-      </main>
+        <main>
+          <Routes>
+            <Route path="/" element={<ProductsPage />} exact />
+            <Route path="/cart" element={<CartPage />} exact />
+          </Routes>
+        </main>
+      </BrowserRouter>
 
       <Footer />
     </CartProvider>
