@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Footer, ProductsPage, CartPage } from "./components";
+import {
+  Navbar,
+  Footer,
+  ProductsPage,
+  CartPage,
+  ScrollTop,
+} from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CartProvider from "./context/CartProvider";
 
@@ -35,6 +41,7 @@ const App = () => {
         <Navbar shadow={headerShadow} />
 
         <main>
+          <ScrollTop />
           <Routes>
             <Route path="/" element={<ProductsPage />} exact />
             <Route path="/cart" element={<CartPage />} exact />
