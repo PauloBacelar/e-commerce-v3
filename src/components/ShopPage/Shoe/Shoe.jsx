@@ -1,7 +1,18 @@
 import "./Shoe.css";
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../../../context/Context";
 
-const Shoe = ({ image, name, price }) => {
+const Shoe = ({ id, image, name, price }) => {
+  const cartContext = useContext(CartContext);
+  const addToCartHandler = (amount) => {
+    cartContext.addItem({
+      id,
+      name,
+      amount,
+      price,
+    });
+  };
+
   return (
     <div className="shoe">
       <div className="shoe__image-container">
@@ -14,9 +25,9 @@ const Shoe = ({ image, name, price }) => {
       </div>
 
       <div className="shoe__btn-container">
-        <a href="#" className="btn shoe__btn">
+        <button className="btn shoe__btn" onClick={() => addToCartHandler(1)}>
           Add to cart
-        </a>
+        </button>
       </div>
     </div>
   );

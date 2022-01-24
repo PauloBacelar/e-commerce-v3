@@ -18,6 +18,11 @@ body {
   min-width: 280px;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+}
+
 *::selection {
   background-color: #242424;
   color: #fff;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Home, ShopPage, Footer } from "./components";
-import { CartContext } from "./context/Context";
+import CartProvider from "./context/CartProvider";
 
 const App = () => {
   const [headerShadow, setHeaderShadow] = useState(false);
@@ -9,6 +9,8 @@ const App = () => {
     totalPrice: 0,
     quantity: 0,
   });
+
+  console.log(cart);
 
   useEffect(() => {
     const scrollListener = () => {
@@ -27,7 +29,7 @@ const App = () => {
   }, []);
 
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartProvider>
       <Navbar shadow={headerShadow} />
 
       <main>
@@ -36,7 +38,7 @@ const App = () => {
       </main>
 
       <Footer />
-    </CartContext.Provider>
+    </CartProvider>
   );
 };
 
