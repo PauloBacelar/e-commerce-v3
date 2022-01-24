@@ -1,5 +1,5 @@
 import "./ShopPage.css";
-import shoes from "../../shoes.js";
+import shoes from "../../../shoes.js";
 import React, { useContext } from "react";
 import Shoe from "./Shoe/Shoe";
 

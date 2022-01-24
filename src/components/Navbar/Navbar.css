@@ -32,10 +32,12 @@
   background-color: #fff;
 }
 
-.header__icon {
+.header__icon,
+.header__title {
   transition: all ease-in-out 0.3s;
 }
 
+.header__title:hover,
 .header__icon:hover {
   color: rgba(255, 255, 255, 0.75) !important;
 }

@@ -1,6 +1,6 @@
 import "./Shoe.css";
 import React, { useContext } from "react";
-import CartContext from "../../../context/Context";
+import CartContext from "../../../../context/Context";
 
 const Shoe = ({ id, image, name, price }) => {
   const cartContext = useContext(CartContext);
