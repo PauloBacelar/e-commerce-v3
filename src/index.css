@@ -66,3 +66,7 @@ button {
 ul {
   list-style: none;
 }
+
+#root {
+  position: relative;
+}

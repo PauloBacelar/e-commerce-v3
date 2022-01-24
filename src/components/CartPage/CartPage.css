@@ -1,0 +1,16 @@
+.cart {
+  height: 100vh;
+  margin-top: 75px;
+}
+
+.cart__content {
+  height: 100%;
+  margin: 0 24px;
+  padding: 2em calc((100vw - 1200px) / 2);
+}
+
+.cart__error {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 18px;
+}
