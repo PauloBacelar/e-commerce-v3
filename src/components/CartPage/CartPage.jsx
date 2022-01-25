@@ -1,5 +1,7 @@
 import "./CartPage.css";
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../../context/Context";
+import CartItem from "./CartItem/CartItem";
 
 const ErrorMessage = () => {
   return (
@@ -10,13 +12,49 @@ const ErrorMessage = () => {
   );
 };
 
+const CartProducts = () => {
+  const cartContext = useContext(CartContext);
+  const totalAmount = `$${cartContext.totalAmount.toFixed(2)}`;
+
+  const cartItemRemoveHandler = (id) => {};
+
+  const cartItemAddHandler = (item) => {};
+
+  return (
+    <div>
+      {cartContext.items.map((item) => {
+        console.log(item);
+
+        return (
+          <CartItem
+            key={Math.random()}
+            name={item.name}
+            amount={item.amount}
+            price={item.price}
+            image={item.image}
+            onRemove={cartItemRemoveHandler.bind(null, item.id)}
+            onAdd={cartItemAddHandler.bind(null, item)}
+          />
+        );
+      })}
+
+      <h3>Total amount: {totalAmount}</h3>
+
+      <button className="btn cart__button">Order</button>
+    </div>
+  );
+};
+
 const CartPage = () => {
+  const cartContext = useContext(CartContext);
+  const isEmpty = cartContext.items.length === 0;
+
   return (
     <section className="cart">
       <div className="cart__content">
         <h2 className="cart__title">Cart</h2>
 
-        <ErrorMessage />
+        {isEmpty ? <ErrorMessage /> : <CartProducts />}
       </div>
     </section>
   );

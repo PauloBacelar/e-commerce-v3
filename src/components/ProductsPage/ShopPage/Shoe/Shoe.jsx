@@ -10,6 +10,7 @@ const Shoe = ({ id, image, name, price }) => {
       name,
       amount,
       price,
+      image,
     });
   };
 
