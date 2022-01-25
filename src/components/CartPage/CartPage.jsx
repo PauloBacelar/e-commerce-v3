@@ -26,10 +26,8 @@ const CartProducts = () => {
 
   return (
     <div>
-      {cartContext.items.map((item) => {
-        console.log(item);
-
-        return (
+      <div className="shop__grid">
+        {cartContext.items.map((item) => (
           <CartItem
             key={Math.random()}
             name={item.name}
@@ -39,8 +37,8 @@ const CartProducts = () => {
             onRemove={cartItemRemoveHandler.bind(null, item.id)}
             onAdd={cartItemAddHandler.bind(null, item)}
           />
-        );
-      })}
+        ))}
+      </div>
 
       <h3>Total amount: {totalAmount}</h3>
 
