@@ -1,6 +1,7 @@
 .cart {
-  height: 100vh;
+  min-height: calc(100vh - 75px);
   margin-top: 75px;
+  position: relative;
 }
 
 .cart__content {

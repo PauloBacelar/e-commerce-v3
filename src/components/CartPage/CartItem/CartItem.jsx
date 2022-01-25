@@ -14,10 +14,10 @@ const CartItem = ({ name, amount, price, image, onRemove, onAdd }) => {
       </div>
 
       <div className="shoe__btn-container">
-        <button className="btn shoe__btn cart__btn" onClick={() => {}}>
+        <button className="btn shoe__btn cart__btn" onClick={onAdd}>
           +
         </button>
-        <button className="btn shoe__btn" onClick={() => {}}>
+        <button className="btn shoe__btn" onClick={onRemove}>
           -
         </button>
       </div>
