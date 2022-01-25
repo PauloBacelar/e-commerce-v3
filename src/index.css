@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
 }
 
 a {
@@ -65,8 +66,4 @@ button {
 
 ul {
   list-style: none;
-}
-
-#root {
-  position: relative;
 }
