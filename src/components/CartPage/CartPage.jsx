@@ -40,9 +40,16 @@ const CartProducts = () => {
         ))}
       </div>
 
-      <h3>Total amount: {totalAmount}</h3>
+      <div className="shop__info">
+        <h3>Total amount: {totalAmount}</h3>
 
-      <button className="btn cart__button">Order</button>
+        <button
+          className="btn shop__order-btn"
+          onClick={() => console.log("Checkout!")}
+        >
+          Order
+        </button>
+      </div>
     </div>
   );
 };

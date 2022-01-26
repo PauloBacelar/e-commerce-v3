@@ -15,3 +15,13 @@
   line-height: 1.5;
   font-size: 18px;
 }
+
+.shop__info {
+  font-size: 20px;
+}
+
+.shop__order-btn {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+}

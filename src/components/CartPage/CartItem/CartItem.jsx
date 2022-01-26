@@ -2,8 +2,6 @@ import "./CartItem.css";
 import React from "react";
 
 const CartItem = ({ name, amount, price, image, onRemove, onAdd }) => {
-  console.log(amount);
-
   return (
     <div className="shoe">
       <div className="shoe__image-container">
