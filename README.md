@@ -54,6 +54,9 @@ Also, an IDE is recommended for editing the code. I recommend [VSCode](https://c
 # Clone this repository
 $ git clone https://github.com/PauloBacelar/e-commerce-v3
 
+# Enter on e-commerce-v3 folder
+$ cd e-commerce-v3
+
 # Install the dependencies
 $ npm install
 
